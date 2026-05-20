@@ -177,37 +177,3 @@ jdbc:mysql://192.168.1.50:3306/tienda_electronica
 ```
 
 De esta forma, todas las sucursales trabajan con la misma base de datos centralizada.
-
-## Errores comunes
-
-### Error de JavaFX
-
-```text
-JavaFX runtime components are missing
-```
-
-Solución: revisar que los **VM arguments** de JavaFX estén configurados correctamente.
-
-### Error de compatibilidad JavaFX
-
-```text
-Unsupported major.minor version 68.0
-```
-
-Solución: usar **JavaFX 21.0.11 LTS** en lugar de JavaFX 26.
-
-### Error de MySQL
-
-```text
-No suitable driver found for jdbc:mysql
-```
-
-Solución: agregar `mysql-connector-j-8.0.46.jar` al **Classpath** del proyecto.
-
-### Error de contraseña
-
-```text
-Access denied for user 'root'@'localhost'
-```
-
-Solución: revisar el usuario y contraseña en `ConexionBD.java`.
